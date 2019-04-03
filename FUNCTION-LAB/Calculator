@@ -1,0 +1,23 @@
+function calculator(a, b, c) {
+
+    let op = c;
+    function add(){
+        return a + b;
+    }
+    function subtraction(){
+        return a - b;
+    }
+    function multiplication(){
+        return a * b;
+    }
+    function division(){
+        return a / b;
+    }
+    switch (op) {
+        case '+': return console.log(add(a,b));
+        case '-': return console.log(subtraction(a,b));
+        case '*': return console.log(multiplication(a,b));
+        case '/': return console.log(division(a,b));
+    }
+}
+calculator(2, 2, '+');

@@ -1,0 +1,17 @@
+function diagonalSum(matrix) {
+
+    let firstDiagonal = 0;
+    let secondDiagonal = 0;
+    for (let row = 0; row < matrix.length ; row++) {
+        for (let col = 0; col < matrix[row].length; col++) {
+            if( row === col){
+               firstDiagonal += matrix[row][col];
+               secondDiagonal += matrix[row][matrix.length - 1 - row];
+            }
+        }
+    }
+    console.log(firstDiagonal, secondDiagonal);
+}
+diagonalSum([[20, 40],
+                  [10, 60]
+                  ]);
