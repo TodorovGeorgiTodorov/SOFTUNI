@@ -1,5 +1,0 @@
-function printAnArray(arr) {
-    let delimeter = arr.pop();
-    console.log(arr.join(delimeter));
-}
-printAnArray(['One', 'Two', 'Three', 'Four', 'Five',  '-']);
