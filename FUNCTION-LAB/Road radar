@@ -1,0 +1,50 @@
+function roadRadar([n, str]) {
+
+    if (str === 'motorway' ) {
+        motorway(n);
+    }else if (str === 'interstate') {
+        interstate(n);
+    }else if (str === 'city'){
+        city(n);
+    } else if (str === 'residential') {
+        residential(n);
+    }
+
+   function motorway(n){
+       if (n > 130 && n <= 150){
+           console.log('speeding');
+       }else if (n > 150 && n <= 170){
+           console.log('excessive speeding');
+       }else if (n > 170){
+           console.log('reckless driving');
+       }
+   }
+   function interstate(n) {
+       if (n > 90 && n <= 110){
+           console.log('speeding');
+       }else if (n > 110 && n <= 130){
+           console.log('excessive speeding');
+       }else if (n > 130){
+           console.log('reckless driving');
+       }
+   }
+   function city(n) {
+       if (n > 50 && n <70){
+           console.log('speeding');
+       }else if (n > 70 && n <= 90){
+           console.log('excessive speeding');
+       }else if (n > 90){
+           console.log('reckless driving');
+       }
+   }
+   function residential(n) {
+       if (n > 20 && n <= 40){
+           console.log('speeding');
+       }else if (n > 40 && n <= 60){
+           console.log('excessive speeding');
+       }else if (n > 60){
+           console.log('reckless driving');
+       }
+   }
+}
+roadRadar([120, 'interstate']);

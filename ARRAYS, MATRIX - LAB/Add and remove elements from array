@@ -1,0 +1,19 @@
+function addAndRemuve(arr) {
+
+    let initialNumber  = 1;
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] === 'add' ){
+            result.push(initialNumber);
+        }else{
+            result.pop();
+        }
+        initialNumber ++;
+    }
+    if( result.length === 0){
+        console.log('Empty');
+    }else{
+        console.log(result.join('\n'));
+    }
+}
+addAndRemuve(['remove', 'remove', 'remove']);
